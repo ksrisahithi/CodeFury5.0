@@ -1,10 +1,12 @@
 library loginpage;
 
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:codefury/views/homepage.dart';
 import 'package:dropdown_search/dropdown_search.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 
 part '../controller/auth.dart';

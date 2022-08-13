@@ -264,12 +264,15 @@ class _RegisterCardState extends State<RegisterCard> {
                           bool shouldNavigate = await register(
                               emailcontroller.text,
                               passwordcontroller.text,
-                              namecontroller.text);
+                              namecontroller.text,
+                              dropdownvalue);
                           if (shouldNavigate) {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => HomePage()));
+                            setState(() {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => HomePage()));
+                            });
                             print("successful");
                           }
                         } else
@@ -277,7 +280,7 @@ class _RegisterCardState extends State<RegisterCard> {
                       },
                       child: const Center(
                         child: Text(
-                          "Coutinue",
+                          "Register",
                           style: TextStyle(color: Colors.white),
                         ),
                       ),
