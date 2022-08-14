@@ -11,7 +11,7 @@ class Register extends StatelessWidget {
           Flexible(
             flex: 1,
             child: Container(
-              child: Image(image: AssetImage('assets/images/illustration-6.png')),
+              child: const Image(image: NetworkImage('https://github.com/ksrisahithi/CodeFury5.0/blob/main/assets/images/Illustration-6.png')),
             ),
           ),
           Flexible(
