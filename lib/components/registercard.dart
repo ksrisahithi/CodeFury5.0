@@ -39,9 +39,10 @@ class _RegisterCardState extends State<RegisterCard> {
               style: TextStyle(fontSize: 32, fontWeight: FontWeight.w600),
             ),
             const Text(
-              "start for free",
-              style: TextStyle(fontStyle: FontStyle.italic, fontSize: 14),
-            ),
+            "You've got startup ideas? You've come to the right place",
+            softWrap: true,
+            style: TextStyle(fontSize: 16, fontStyle: FontStyle.italic),
+          ),
             Container(
               padding: const EdgeInsets.all(90),
               margin: const EdgeInsets.all(30),
@@ -271,7 +272,7 @@ class _RegisterCardState extends State<RegisterCard> {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => HomePage()));
+                                      builder: (context) => EditDashboard()));
                             });
                             print("successful");
                           }

@@ -12,12 +12,18 @@ class LoginCard extends StatelessWidget {
       child: Column(
         children: [
           const Text(
-            "Welcome Back",
+            "Welcome to the Startup Summit",
             style: TextStyle(fontSize: 32, fontWeight: FontWeight.w600),
           ),
           const Text(
-            "please enter your details",
+            "You've got startup ideas? You've come to the right place",
+            softWrap: true,
             style: TextStyle(fontSize: 16, fontStyle: FontStyle.italic),
+          ),
+          const Text(
+            "created during codeFury5.0",
+            softWrap: true,
+            style: TextStyle(fontSize: 12, fontStyle: FontStyle.italic),
           ),
           Container(
             padding: const EdgeInsets.all(90),

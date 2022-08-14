@@ -59,11 +59,14 @@ class _ProfileCardState extends State<ProfileCard> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                const Text('Profile', style: TextStyle(fontSize: 30, fontWeight: FontWeight.w600),),
+                const SizedBox(height: 10,),
                 Row(
                   children: [
-                    const CircleAvatar(
-                      radius: 60,
+                    CircleAvatar(
+                      radius: 50,
                       backgroundColor: Colors.amberAccent,
+                      backgroundImage: Image(image: AssetImage('assets/images/user_icon.png')).image ,
                     ),
                     const SizedBox(
                       width: 10,
@@ -71,7 +74,7 @@ class _ProfileCardState extends State<ProfileCard> {
                     Text(
                       data['name'],
                       style: const TextStyle(
-                        fontSize: 32,
+                        fontSize: 28,
                         fontWeight: FontWeight.w600,
                       ),
                     ),
@@ -267,7 +270,7 @@ class _ProfileCardState extends State<ProfileCard> {
                       child: TextField(
                         controller: industrycontroller,
                         decoration: InputDecoration(
-                            hintText: "active years of your startup",
+                            hintText: "industry",
                             hintStyle: TextStyle(fontSize: 12),
                             border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(10),
@@ -288,7 +291,7 @@ class _ProfileCardState extends State<ProfileCard> {
                     padding: const EdgeInsets.all(15),
                     child: InkWell(
                       onTap: () async {
-                        bool shouldNavigate = await save(descontroller.text, dropdownvalue , yearsactive.text, fundscontroller.text, industrycontroller.text, industrycontroller.text, userid!);
+                        bool shouldNavigate = await save(descontroller.text, dropdownvalue , yearsactive.text, fundscontroller.text, investmentcontroller.text, industrycontroller.text, userid!);
                         if (shouldNavigate) {
                           setState(() {
                             Navigator.push(context, MaterialPageRoute(builder: (context) => ProfileSaved(uid: userid!,),),);

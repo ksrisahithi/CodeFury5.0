@@ -11,7 +11,7 @@ class ProfileSaved extends StatelessWidget {
       body: Row(
         children: [
           Flexible(flex: 6,child: SavedProfileCard(uid: uid,),),
-          Flexible(flex: 2,child: Container(color: Colors.cyan,),),
+          Flexible(flex: 2,child: SideBar()),
         ],
       ),
     );

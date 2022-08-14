@@ -33,7 +33,7 @@ class _LoginPageState extends State<LoginPage> {
           Flexible(
             flex: 1,
             child: Container(
-              color: Colors.red,
+              child: Image(image: AssetImage('assets/images/illustration-1.png')),
             ),
           ),
           Flexible(

@@ -11,7 +11,7 @@ class Register extends StatelessWidget {
           Flexible(
             flex: 1,
             child: Container(
-              color: Colors.purple,
+              child: Image(image: AssetImage('assets/images/illustration-6.png')),
             ),
           ),
           Flexible(
